@@ -291,7 +291,7 @@
 
         <img src="https://ib05lvtzg55be6a6c6kpg3.ct8.pl/apka-3-0/dowod_files/arrow1.svg" alt="arrow" id="rotation" style="transform: rotate(-90deg);">
     </section>
-  <div id="rogo">
+ <div id="rogo">
 
   <div class="content">
 
@@ -339,6 +339,14 @@
 
     <p class="krecha"></p>
 
+    <!-- Sekcja bez linii -->
+    <section class="dana">
+      <p class="info">Twoje dodatkowe dane</p>
+      <p class="main"><strong></strong>PRZYKŁADOWE DANE</p>
+    </section>
+
+    <!-- Koniec sekcji bez linii -->
+
     <section class="dana">
       <p class="info">Data zameldowania na pobyt stały</p>
       <p class="main"><strong></strong>2021-07-14</p>
@@ -350,7 +358,6 @@
 
 <style>
   .dana {
-    height: auto; /* Ramka dostosowuje się do zawartości */
     padding: 0;
     margin: 0;
     overflow: hidden; /* Ukrycie nadmiaru tekstu */
@@ -358,16 +365,20 @@
 
   .main, .info {
     height: auto; /* Elementy dostosowują się do tekstu */
-    line-height: 5px; /* Ustawienie minimalnej wysokości wiersza */
-    font-size: 8px; /* Rozmiar czcionki */
-    margin: 3px 0; /* Większy odstęp między tekstami */
+    line-height: 1.2em; /* Wyrównanie tekstu */
+    font-size: 10px; /* Rozmiar czcionki */
+    margin: 10px 0; /* Większe odstępy między tekstami */
     padding: 0;
   }
 
   .krecha {
     height: 1px; /* Cienkie linie oddzielające */
-    background-color: #000; /* Kolor linii */
-    margin: 3px 0; /* Odstęp między kreskami */
+    background-color: #808080; /* Nowy kolor linii */
+    margin: 10px 0; /* Większe odstępy między kreskami */
+  }
+
+  .dana:nth-child(8) .krecha {
+    display: none; /* Ukrycie linii dla sekcji z "Twoje dodatkowe dane" */
   }
 </style>
 <a 
